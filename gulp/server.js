@@ -24,7 +24,14 @@ function browserSyncInit(baseDir, files) {
       baseDir: baseDir,
       middleware: middleware,
       routes: routes
-    }
+    },
+    port: 8080,
+    host: "0.0.0.0",
+    // ui: {
+    //   port: 8081,
+    //   host: "0.0.0.0"
+    // }
+    ui: false
   });
 }
 
